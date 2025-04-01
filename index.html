@@ -1264,7 +1264,10 @@
                 <div class="member-info">
                   <h4>Sarah Thompson</h4>
                   <span>Project Management Lead</span>
-                  <p>Certified PMP with extensive experience in agile methodologies</p>
+                  <p>
+                    Certified PMP with extensive experience in agile
+                    methodologies
+                  </p>
                 </div>
               </div>
             </div>
@@ -1529,6 +1532,37 @@
 
     <!-- Preloader -->
     <div id="preloader"></div>
+
+    <div class="chat-logo" id="chatLogo">
+      <i class="bi bi-chat-dots"></i>
+    </div>
+
+    <div class="chat-assistant" id="chatAssistant">
+      <div class="chat-box">
+        <div class="chat-header">
+          <h5 class="m-0">AI Assistant</h5>
+          <button
+            type="button"
+            class="btn-close"
+            id="chatClose"
+            aria-label="Close"
+          >
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+          <!-- Messages will be added here -->
+        </div>
+        <div class="chat-input">
+          <input
+            type="text"
+            id="chatInput"
+            placeholder="Type your message..."
+          />
+          <button id="chatSend">Send</button>
+        </div>
+      </div>
+    </div>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

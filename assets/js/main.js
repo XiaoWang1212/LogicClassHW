@@ -209,3 +209,92 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+// Chat Assistant Functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const chatLogo = document.getElementById('chatLogo');
+  const chatAssistant = document.getElementById('chatAssistant');
+  const chatClose = document.getElementById('chatClose');
+  const chatInput = document.getElementById('chatInput');
+  const chatSend = document.getElementById('chatSend');
+  const chatMessages = document.getElementById('chatMessages');
+
+  // Toggle chat window
+  chatLogo.addEventListener('click', function() {
+    chatAssistant.style.display = chatAssistant.style.display === 'none' ? 'block' : 'none';
+  });
+
+  // Close chat window
+  chatClose.addEventListener('click', function() {
+    chatAssistant.style.display = 'none';
+  });
+
+  // Send message
+  function sendMessage() {
+    const message = chatInput.value.trim();
+    if (message) {
+      // Add user message
+      addMessage('user', message);
+      
+      // Simulate AI response (you can replace this with actual API call)
+      setTimeout(() => {
+        addMessage('assistant', 'Thank you for your message. How can I help you today?');
+      }, 1000);
+      
+      chatInput.value = '';
+    }
+  }
+
+  // Add message to chat
+  function addMessage(sender, text) {
+    const messageDiv = document.createElement('div');
+    messageDiv.className = `message ${sender}-message`;
+    messageDiv.innerHTML = `<p>${text}</p>`;
+    chatMessages.appendChild(messageDiv);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+
+  chatSend.addEventListener('click', sendMessage);
+  chatInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      sendMessage();
+    }
+  });
+
+  // Add initial message
+  addMessage('assistant', 'Hello! How can I assist you today?');
+});
+
+// Chat Assistant Animation Control
+document.addEventListener('DOMContentLoaded', function() {
+  const chatLogo = document.getElementById('chatLogo');
+  const chatAssistant = document.getElementById('chatAssistant');
+  const chatClose = document.getElementById('chatClose');
+  let isOpen = false;
+
+  // Open chat window
+  chatLogo.addEventListener('click', function() {
+    isOpen = !isOpen;
+    if (isOpen) {
+      chatAssistant.style.display = 'block';
+      chatAssistant.classList.remove('closing');
+    } else {
+      chatAssistant.classList.add('closing');
+      setTimeout(() => {
+        chatAssistant.style.display = 'none';
+        chatAssistant.classList.remove('closing');
+      }, 300);
+    }
+  });
+
+  // Close chat window
+  chatClose.addEventListener('click', function() {
+    isOpen = false;
+    chatAssistant.classList.add('closing');
+    // Wait for the animation to finish before hiding the chat window
+    setTimeout(() => {
+      chatAssistant.style.display = 'none';
+      chatAssistant.classList.remove('closing');
+    }, 300); // 300ms = animation duration
+  });
+});
