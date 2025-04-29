@@ -298,3 +298,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 300); // 300ms = animation duration
   });
 });
+
+function simulateTyping(message, element) {
+  const typingDelay = 30; // milliseconds per character
+  const p = document.createElement('p');
+  p.classList.add('typing-animation');
+  element.appendChild(p);
+  
+  let i = 0;
+  const interval = setInterval(() => {
+    p.textContent = message.substring(0, i);
+    i++;
+    if (i > message.length) {
+      clearInterval(interval);
+      p.classList.remove('typing-animation');
+    }
+    element.scrollTop = element.scrollHeight;
+  }, typingDelay);
+}
+
+// Use this when adding assistant messages
+function addAssistantMessage(text) {
+  const messageDiv = document.createElement('div');
+  messageDiv.className = 'message assistant-message typing';
+  chatMessages.appendChild(messageDiv);
+  simulateTyping(text, messageDiv);
+}

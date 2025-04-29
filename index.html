@@ -1407,6 +1407,764 @@
         </div>
       </section>
       <!-- /Contact Section -->
+
+      <section id="pricing-calculator" class="section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Project Cost Calculator</h2>
+          <p>Get an instant estimate for your web development project</p>
+        </div>
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+              <div class="pricing-calculator p-4 rounded border">
+                <form id="calculatorForm">
+                  <div class="mb-3">
+                    <label class="form-label">Project Type</label>
+                    <select class="form-select" id="projectType">
+                      <option value="website">Corporate Website</option>
+                      <option value="ecommerce">E-Commerce Store</option>
+                      <option value="webapp">Web Application</option>
+                      <option value="mobile">Mobile App</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Estimated Pages/Screens</label>
+                    <input
+                      type="range"
+                      class="form-range"
+                      id="pageCount"
+                      min="1"
+                      max="50"
+                      value="5"
+                    />
+                    <div class="d-flex justify-content-between">
+                      <span>1</span>
+                      <span id="pageCountValue">5</span>
+                      <span>50+</span>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Features Needed</label>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="user_auth"
+                        id="userAuth"
+                      />
+                      <label class="form-check-label" for="userAuth"
+                        >User Authentication</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="payment"
+                        id="payment"
+                      />
+                      <label class="form-check-label" for="payment"
+                        >Payment Processing</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="cms"
+                        id="cms"
+                      />
+                      <label class="form-check-label" for="cms"
+                        >Content Management</label
+                      >
+                    </div>
+                  </div>
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">
+                      Calculate Estimate
+                    </button>
+                  </div>
+                </form>
+                <div class="mt-4 text-center" id="estimateResult"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="technologies" class="technologies section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Technologies We Master</h2>
+          <p>Our team specializes in a wide range of modern technologies</p>
+        </div>
+
+        <div class="container">
+          <div class="row gy-4">
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="technology-card text-center p-4">
+                <div class="icon mb-3">
+                  <i class="bi bi-filetype-html"></i>
+                </div>
+                <h4>Frontend</h4>
+                <ul class="list-unstyled tech-list">
+                  <li>React</li>
+                  <li>Vue.js</li>
+                  <li>Angular</li>
+                  <li>TailwindCSS</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="technology-card text-center p-4">
+                <div class="icon mb-3">
+                  <i class="bi bi-server"></i>
+                </div>
+                <h4>Backend</h4>
+                <ul class="list-unstyled tech-list">
+                  <li>Node.js</li>
+                  <li>Python/Django</li>
+                  <li>PHP/Laravel</li>
+                  <li>.NET Core</li>
+                  <li>Java Spring</li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="technology-card text-center p-4">
+                <div class="icon mb-3">
+                  <i class="bi bi-database"></i>
+                </div>
+                <h4>Database</h4>
+                <ul class="list-unstyled tech-list">
+                  <li>MySQL</li>
+                  <li>PostgreSQL</li>
+                  <li>MongoDB</li>
+                  <li>Redis</li>
+                  <li>Firebase</li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="technology-card text-center p-4">
+                <div class="icon mb-3">
+                  <i class="bi bi-cloud"></i>
+                </div>
+                <h4>DevOps</h4>
+                <ul class="list-unstyled tech-list">
+                  <li>AWS</li>
+                  <li>Google Cloud</li>
+                  <li>Docker</li>
+                  <li>Kubernetes</li>
+                  <li>CI/CD Pipelines</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="process section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Our Development Process</h2>
+          <p>How we transform your ideas into reality</p>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="process-timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                  <div class="timeline-dot"><i class="bi bi-1-circle"></i></div>
+                  <div class="timeline-content">
+                    <h4>Discovery & Requirements</h4>
+                    <p>
+                      We begin by understanding your business goals, target
+                      audience, and specific requirements to create a solid
+                      project foundation.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="timeline-item"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <div class="timeline-dot"><i class="bi bi-2-circle"></i></div>
+                  <div class="timeline-content">
+                    <h4>Planning & Design</h4>
+                    <p>
+                      Our team creates detailed project plans, wireframes, and
+                      design mockups for your approval before development
+                      begins.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="timeline-item"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <div class="timeline-dot"><i class="bi bi-3-circle"></i></div>
+                  <div class="timeline-content">
+                    <h4>Development</h4>
+                    <p>
+                      Our developers build your solution using the latest
+                      technologies, following best practices and industry
+                      standards.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="timeline-item"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div class="timeline-dot"><i class="bi bi-4-circle"></i></div>
+                  <div class="timeline-content">
+                    <h4>Testing & QA</h4>
+                    <p>
+                      Rigorous testing ensures your project is bug-free, secure,
+                      and works perfectly across all devices and browsers.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="timeline-item"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <div class="timeline-dot"><i class="bi bi-5-circle"></i></div>
+                  <div class="timeline-content">
+                    <h4>Deployment</h4>
+                    <p>
+                      We handle the deployment process to make sure your website
+                      or application goes live without any issues.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="timeline-item"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
+                  <div class="timeline-dot"><i class="bi bi-6-circle"></i></div>
+                  <div class="timeline-content">
+                    <h4>Maintenance & Support</h4>
+                    <p>
+                      Our relationship doesn't end at launch. We provide ongoing
+                      maintenance and support to keep your digital assets
+                      running smoothly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="faq section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Frequently Asked Questions</h2>
+          <p>Common questions about our outsourcing services</p>
+        </div>
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div
+                class="accordion"
+                id="faqAccordion"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq1"
+                    >
+                      How does your pricing model work?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq1"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      We offer flexible pricing models including fixed project
+                      pricing, hourly rates, and dedicated team arrangements.
+                      After understanding your project requirements, we'll
+                      recommend the most cost-effective option for your needs.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq2"
+                    >
+                      What is your typical project timeline?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Project timelines vary based on complexity and scope.
+                      Simple websites may take 2-4 weeks, while complex web
+                      applications could take 3-6 months. During our initial
+                      consultation, we'll provide you with a detailed timeline
+                      specific to your project.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq3"
+                    >
+                      How do you handle communication during projects?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      We maintain clear communication channels through project
+                      management tools like Jira or Trello. You'll receive
+                      regular updates, have scheduled video meetings, and have a
+                      dedicated project manager as your main point of contact
+                      throughout the development process.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq4"
+                    >
+                      Do you offer maintenance after project completion?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq4"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Yes, we offer various maintenance packages to keep your
+                      website or application running smoothly. These include
+                      regular updates, security patches, performance
+                      optimization, and content updates based on your ongoing
+                      needs.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq5"
+                    >
+                      What happens if I'm not satisfied with the work?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq5"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Customer satisfaction is our priority. We work with a
+                      milestone-based approach that allows for feedback and
+                      revisions at each stage. Our contracts include a
+                      satisfaction guarantee, and we're committed to making
+                      revisions until you're completely satisfied with the
+                      deliverables.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="case-studies" class="case-studies section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Case Studies</h2>
+          <p>Explore how we've helped businesses succeed</p>
+        </div>
+      
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="case-study-card">
+                <div class="case-study-img">
+                  <img src="assets/img/case-studies/case1.jpg" class="img-fluid" alt="E-commerce Platform">
+                  <div class="overlay">
+                    <a href="case-study-1.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+                <div class="case-study-info p-4">
+                  <h4>E-commerce Platform Redesign</h4>
+                  <p>How we increased conversion rates by 45% for a retail client</p>
+                  <div class="tags">
+                    <span class="badge bg-primary">E-commerce</span>
+                    <span class="badge bg-info">UI/UX</span>
+                    <span class="badge bg-success">Conversion Optimization</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="case-study-card">
+                <div class="case-study-img">
+                  <img src="assets/img/case-studies/case2.jpg" class="img-fluid" alt="Custom CRM">
+                  <div class="overlay">
+                    <a href="case-study-2.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+                <div class="case-study-info p-4">
+                  <h4>Custom CRM Development</h4>
+                  <p>Streamlining operations for a financial services provider</p>
+                  <div class="tags">
+                    <span class="badge bg-primary">CRM</span>
+                    <span class="badge bg-info">Business Software</span>
+                    <span class="badge bg-success">Process Automation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="case-study-card">
+                <div class="case-study-img">
+                  <img src="assets/img/case-studies/case3.jpg" class="img-fluid" alt="Mobile App">
+                  <div class="overlay">
+                    <a href="case-study-3.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+                <div class="case-study-info p-4">
+                  <h4>Healthcare Mobile App</h4>
+                  <p>Creating a patient management solution for a healthcare provider</p>
+                  <div class="tags">
+                    <span class="badge bg-primary">Mobile</span>
+                    <span class="badge bg-info">Healthcare</span>
+                    <span class="badge bg-success">User Experience</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="custom-solutions" class="section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Custom Software Solutions</h2>
+          <p>Tailor-made software development to solve your business challenges</p>
+        </div>
+      
+        <div class="container">
+          <div class="row gy-4 align-items-center">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+              <img src="assets/img/custom-solutions.jpg" class="img-fluid rounded" alt="Custom Solutions">
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="content">
+                <h3>Why Choose Custom Development?</h3>
+                <p>Off-the-shelf software rarely meets all your business requirements. Our custom development services ensure you get exactly what your business needs.</p>
+                
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                  <p>Perfectly aligned with your business processes</p>
+                </div>
+                <div class="d-flex align-items-center mt-2">
+                  <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                  <p>Scalable to grow with your business</p>
+                </div>
+                <div class="d-flex align-items-center mt-2">
+                  <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                  <p>Higher ROI in the long term</p>
+                </div>
+                <div class="d-flex align-items-center mt-2">
+                  <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                  <p>Complete ownership of intellectual property</p>
+                </div>
+                
+                <div class="mt-4">
+                  <a href="#contact" class="btn btn-primary">Discuss Your Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="success-metrics" class="section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Driving Success</h2>
+          <p>Measurable results that help our clients thrive in the digital landscape</p>
+        </div>
+      
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+              <div class="metric-card text-center p-4 border rounded h-100">
+                <div class="metric-icon mb-3">
+                  <i class="bi bi-speedometer2 text-primary" style="font-size: 3rem;"></i>
+                </div>
+                <h4 class="counter mb-2">45%</h4>
+                <p>Average performance improvement for client websites after optimization</p>
+              </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+              <div class="metric-card text-center p-4 border rounded h-100">
+                <div class="metric-icon mb-3">
+                  <i class="bi bi-graph-up-arrow text-primary" style="font-size: 3rem;"></i>
+                </div>
+                <h4 class="counter mb-2">68%</h4>
+                <p>Average conversion rate increase for e-commerce clients</p>
+              </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+              <div class="metric-card text-center p-4 border rounded h-100">
+                <div class="metric-icon mb-3">
+                  <i class="bi bi-award text-primary" style="font-size: 3rem;"></i>
+                </div>
+                <h4 class="counter mb-2">92%</h4>
+                <p>Client retention rate, showcasing our commitment to customer satisfaction</p>
+              </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+              <div class="metric-card text-center p-4 border rounded h-100">
+                <div class="metric-icon mb-3">
+                  <i class="bi bi-clock-history text-primary" style="font-size: 3rem;"></i>
+                </div>
+                <h4 class="counter mb-2">30%</h4>
+                <p>Average time-to-market reduction for client projects</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="clients-wall" class="section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Trusted by Leading Companies</h2>
+          <p>Join our growing list of satisfied clients from various industries</p>
+        </div>
+        
+        <div class="container">
+          <div class="client-logos" data-aos="zoom-in">
+            <div class="row g-4 justify-content-center align-items-center">
+              <div class="col-lg-2 col-md-3 col-4">
+                <img src="assets/img/clients/client-1.png" class="img-fluid client-logo" alt="Client Logo">
+              </div>
+              <div class="col-lg-2 col-md-3 col-4">
+                <img src="assets/img/clients/client-2.png" class="img-fluid client-logo" alt="Client Logo">
+              </div>
+              <div class="col-lg-2 col-md-3 col-4">
+                <img src="assets/img/clients/client-3.png" class="img-fluid client-logo" alt="Client Logo">
+              </div>
+              <div class="col-lg-2 col-md-3 col-4">
+                <img src="assets/img/clients/client-4.png" class="img-fluid client-logo" alt="Client Logo">
+              </div>
+              <div class="col-lg-2 col-md-3 col-4">
+                <img src="assets/img/clients/client-5.png" class="img-fluid client-logo" alt="Client Logo">
+              </div>
+              <div class="col-lg-2 col-md-3 col-4">
+                <img src="assets/img/clients/client-6.png" class="img-fluid client-logo" alt="Client Logo">
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center mt-5">
+            <a href="#case-studies" class="btn btn-outline-primary">View Success Stories</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="progress-tracker" class="section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Project Transparency</h2>
+          <p>Stay informed with our client-friendly project tracking system</p>
+        </div>
+        
+        <div class="container">
+          <div class="row gy-4 align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+              <h3>Real-time Project Updates</h3>
+              <p>We believe in complete transparency throughout the development process. Our clients have access to a dedicated portal where they can:</p>
+              
+              <ul class="list-unstyled mt-4">
+                <li class="d-flex mb-3">
+                  <i class="bi bi-check-circle-fill text-primary me-2 mt-1"></i>
+                  <div>
+                    <h5>Track Milestones</h5>
+                    <p>See exactly which phase your project is in and upcoming deadlines</p>
+                  </div>
+                </li>
+                <li class="d-flex mb-3">
+                  <i class="bi bi-check-circle-fill text-primary me-2 mt-1"></i>
+                  <div>
+                    <h5>Review Deliverables</h5>
+                    <p>Access and approve work as it's completed</p>
+                  </div>
+                </li>
+                <li class="d-flex mb-3">
+                  <i class="bi bi-check-circle-fill text-primary me-2 mt-1"></i>
+                  <div>
+                    <h5>Communicate Directly</h5>
+                    <p>Message your project manager and development team in real-time</p>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <i class="bi bi-check-circle-fill text-primary me-2 mt-1"></i>
+                  <div>
+                    <h5>Budget Monitoring</h5>
+                    <p>Keep track of expenses and stay within your budget</p>
+                  </div>
+                </li>
+              </ul>
+              
+              <div class="mt-4">
+                <a href="#contact" class="btn btn-primary">Request Demo Access</a>
+              </div>
+            </div>
+            
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+              <img src="assets/img/project-tracking.jpg" class="img-fluid rounded shadow" alt="Project Tracking">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="engagement-models" class="section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Flexible Engagement Models</h2>
+          <p>Choose the cooperation model that best suits your business needs</p>
+        </div>
+        
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body p-5">
+                  <div class="icon-box mb-4">
+                    <i class="bi bi-clipboard-check text-primary" style="font-size: 3rem;"></i>
+                  </div>
+                  <h3 class="card-title mb-3">Fixed Price</h3>
+                  <p class="card-text">Ideal for projects with well-defined requirements and clear deliverables. We agree on a fixed cost and timeline upfront.</p>
+                  <h5 class="mt-4 mb-3">Best for:</h5>
+                  <ul class="list-unstyled">
+                    <li><i class="bi bi-check2 me-2 text-primary"></i>Small to medium-sized projects</li>
+                    <li><i class="bi bi-check2 me-2 text-primary"></i>Clear specifications</li>
+                    <li><i class="bi bi-check2 me-2 text-primary"></i>Defined timeline</li>
+                    <li><i class="bi bi-check2 me-2 text-primary"></i>Budget certainty</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100 border-0 shadow">
+                <div class="card-body p-5">
+                  <div class="icon-box mb-4">
+                    <i class="bi bi-clock-history text-primary" style="font-size: 3rem;"></i>
+                  </div>
+                  <h3 class="card-title mb-3">Time & Material</h3>
+                  <p class="card-text">Flexible approach where you pay for the actual time spent on your project, allowing for changes and adjustments as needed.</p>
+                  <h5 class="mt-4 mb-3">Best for:</h5>
+                  <ul class="list-unstyled">
+                    <li><i class="bi bi-check2 me-2 text-primary"></i>Evolving requirements</li>
+                    <li><i class="bi bi-check2 me-2 text-primary"></i>Ongoing development</li>
+                    <li><i class="bi bi-check2 me-2 text-primary"></i>Projects needing flexibility</li>
+                    <li><i class="bi bi-check2 me-2 text-primary"></i>Agile methodology</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body p-5">
+                  <div class="icon-box mb-4">
+                    <i class="bi bi-people-fill text-primary" style="font-size: 3rem;"></i>
+                  </div>
+                  <h3 class="card-title mb-3">Dedicated Team</h3>
+                  <p class="card-text">A team of specialists working exclusively on your project, fully integrated with your processes and communication channels.</p>
+                  <h5 class="mt-4 mb-3">Best for:</h5>
+                  <ul class="list-unstyled">
+                    <li><i class="bi bi-check2 me-2 text-primary"></i>Long-term projects</li>
+                    <li><i class="bi bi-check2 me-2 text-primary"></i>Complex requirements</li>
+                    <li><i class="bi bi-check2 me-2 text-primary"></i>Need for scalability</li>
+                    <li><i class="bi bi-check2 me-2 text-primary"></i>Direct management option</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+            <a href="#contact" class="btn btn-primary btn-lg">Discuss Your Project Needs</a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer id="footer" class="footer dark-background">
@@ -1551,7 +2309,38 @@
           </button>
         </div>
         <div class="chat-messages" id="chatMessages">
-          <!-- Messages will be added here -->
+          <!-- Initial message -->
+          <div class="message assistant-message">
+            <p>Hello! I'm your AI assistant. How can I help you today?</p>
+          </div>
+
+          <!-- Quick questions -->
+          <div class="quick-questions">
+            <button
+              class="quick-question-btn"
+              data-question="How much does a website cost?"
+            >
+              How much does a website cost?
+            </button>
+            <button
+              class="quick-question-btn"
+              data-question="What is your development process?"
+            >
+              What is your development process?
+            </button>
+            <button
+              class="quick-question-btn"
+              data-question="How long will my project take?"
+            >
+              How long will my project take?
+            </button>
+            <button
+              class="quick-question-btn"
+              data-question="Do you offer maintenance?"
+            >
+              Do you offer maintenance?
+            </button>
+          </div>
         </div>
         <div class="chat-input">
           <input

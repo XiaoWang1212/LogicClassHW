@@ -1896,3 +1896,29 @@ section,
     opacity: 0;
   }
 }
+
+.typing-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.typing-animation:after {
+  content: '';
+  position: absolute;
+  right: -4px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: currentColor;
+  animation: typing-cursor 0.8s infinite;
+}
+
+@keyframes typing-cursor {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.message.assistant-message.typing p {
+  display: inline-block;
+}
